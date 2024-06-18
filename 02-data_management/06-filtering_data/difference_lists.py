@@ -2,13 +2,6 @@
 
 Calculate the differences of two lists
 
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 6.3.2 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
 '''
 
 data_a = [1, 2, 3, 4, 5, 6]
@@ -25,5 +18,5 @@ for num in data_b:
     if num not in data_a:
         b_not_a.append(num)
 
-print a_not_b
-print b_not_a
+print (a_not_b)
+print (b_not_a)

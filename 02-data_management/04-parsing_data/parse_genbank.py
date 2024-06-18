@@ -1,15 +1,3 @@
-'''
-
-Read a Genbank file and convert it to a FASTA file.
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 4.4.3 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
-'''
 
 genbank_file = open("AY810830.gb")
 output_file = open("AY810830.fasta","w")

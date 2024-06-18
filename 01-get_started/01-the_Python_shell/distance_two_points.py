@@ -1,15 +1,3 @@
-'''
-
-Calculate the distance between two points
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 1.4.1 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
-'''
 
 
 from math import sqrt
@@ -21,4 +9,4 @@ dy = y1 - y2
 dz = z1 - z2
 dsquare = pow(dx, 2) + pow(dy, 2) + pow(dz, 2)
 distance = sqrt(dsquare)
-print distance
+print (distance)

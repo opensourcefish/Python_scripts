@@ -1,15 +1,4 @@
-'''
 
-Translate a RNA sequence to a protein sequence in three reading frames.
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 5.2.2 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
-'''
 
 codon_table = {
     'GCU':'A', 'GCC':'A', 'GCA':'A', 'GCG':'A', 'CGU':'R', 'CGC':'R',   
@@ -26,16 +15,21 @@ codon_table = {
     'UAG':'STOP', 'UGA':'STOP', 'UAA':'STOP'
     }
 
+out_file = open('RNA-translate.fasta','w')
 # read the RNA sequence into a single string
 rna = ''
 for line in open('A06662-RNA.fasta'):
+    if line.startswith('>'):
+        AC = line.split(' ')[0].strip()
+
     if not line.startswith('>'): 
         rna = rna + line.strip()
 
 # translate one frame at a time
 for frame in range(3):
     prot = '' 
-    print 'Reading frame ' + str(frame + 1)
+    out_file.write('\n' + AC + ' ' + 'Reading frame' + ' ' + str(frame + 1) + '\n' )
+
     for i in range(frame, len(rna), 3):
         codon = rna[i:i + 3]
         if codon in codon_table:
@@ -45,10 +39,10 @@ for frame in range(3):
                 prot = prot + codon_table[codon]
         else:
             # handle too short codons
-            prot = prot + '-' 	
+            prot = prot + '-'
 
     # format to blocks of 48 columns
     i = 0
     while i < len(prot):
-        print prot[i:i + 48]
+        out_file.write(prot[i:i + 48])
         i = i + 48

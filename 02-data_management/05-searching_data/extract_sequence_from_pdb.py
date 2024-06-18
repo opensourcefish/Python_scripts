@@ -2,13 +2,6 @@
 
 Read the sequence from a PDB structure.
 
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 5.4.3 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
 '''
 
 aa_codes = {
@@ -27,7 +20,7 @@ for line in open("1TLD.pdb"):
             seq = seq + aa_codes[resname]
 
 i = 0
-print ">1TLD"
+print (">1TLD")
 while i < len(seq):
-    print seq[i:i + 64]
+    print (seq[i:i + 64])
     i = i + 64

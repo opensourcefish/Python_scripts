@@ -1,13 +1,5 @@
 '''
 Predict protein disorder.
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 5.4.2 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
 '''
 
 propensities = {
@@ -36,7 +28,7 @@ for res in input_seq:
       else:
          output_seq += res.lower()
    else:
-      print 'unrecognized character:', res
+      print ('unrecognized character:'), res
       break
 
-print output_seq
+print (output_seq)

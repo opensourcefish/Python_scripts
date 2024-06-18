@@ -1,16 +1,3 @@
-'''
-
-Read a series of numbers from a text file
-and print a summary of the data
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 3.2.2 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
-'''
 
 data = []
 

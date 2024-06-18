@@ -1,14 +1,5 @@
 '''
-
 Filter transcripts from NGS.
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 6.2.2 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
 '''
 tracking = open('transcripts.tracking', 'r')
 out_file = open('transcripts-filtered.tracking', 'w')
