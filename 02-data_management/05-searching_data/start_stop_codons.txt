@@ -1,0 +1,10 @@
+
+>EU517459.1 Reading frame 1
+start codon numbers: 4
+stop codon numbers: 25
+>EU517459.1 Reading frame 2
+start codon numbers: 12
+stop codon numbers: 23
+>EU517459.1 Reading frame 3
+start codon numbers: 18
+stop codon numbers: 34
