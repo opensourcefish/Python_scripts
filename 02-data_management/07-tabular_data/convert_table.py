@@ -1,14 +1,5 @@
 '''
-
 Convert a table from a nested list to a nested dictionary and back.
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 7.4.3 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
 '''
 
 table = [
@@ -26,10 +17,10 @@ nested_dict = {}
 for row in table:
     entry = {'protein': row[0], 'ext': row[1]}
     nested_dict[row[0]] = entry
-print nested_dict
+print (nested_dict)
 
 # convert nested dict back to nested list
 nested_list = []
 for entry in table:
     nested_list.append([entry['protein'], entry['ext']])
-print nested_list
+print (nested_list)

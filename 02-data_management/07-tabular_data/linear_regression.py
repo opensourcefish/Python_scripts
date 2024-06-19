@@ -1,12 +1,6 @@
 '''
-
 Calculate protein concentrations from Lowrys extinction data
 using a linear regression.
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
------------------------------------------------------------
 '''
 
 table = [
@@ -37,5 +31,5 @@ slope = -sum(product1) / sum(product2)
 xoffset = av_ext - slope * av_pro
 
 e = float(raw_input('Enter extinction: '))
-print 'protein concentration', (e - xoffset) / slope
+print ('protein concentration', (e - xoffset) / slope)
 

@@ -1,13 +1,5 @@
 '''
 Reformat a four-column to a two-column table.
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 7.2.2 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
 '''
 
 table = [
@@ -30,5 +22,5 @@ protein = protein * 3
 table = zip(protein, extinction)
 
 for prot, ext in table:
-    print prot, ext
+    print (prot, ext)
     

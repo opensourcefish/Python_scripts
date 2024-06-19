@@ -1,14 +1,5 @@
 '''
-
 Represent a table as a dictionary and access a single cell.
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 7.4.2 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
 '''
 
 table = [
@@ -22,5 +13,5 @@ table = [
 
 cell = table[1]['ext2']
 
-print table
-print cell
+print (table)
+print (cell)
