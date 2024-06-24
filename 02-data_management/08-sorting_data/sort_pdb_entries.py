@@ -1,13 +1,5 @@
 '''
 Sort entries in a comma separated file by two columns.
-
------------------------------------------------------------
-(c) 2013 Allegra Via and Kristian Rother
-    Licensed under the conditions of the Python License
-
-    This code appears in section 8.4.3 of the book
-    "Managing Biological Data with Python".
------------------------------------------------------------
 '''
 
 from operator import itemgetter
