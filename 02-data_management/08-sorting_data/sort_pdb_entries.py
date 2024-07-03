@@ -17,7 +17,7 @@ for line in input_file:
 
 table_sorted = sorted(table, key=itemgetter(3, 4))
 
-output_file.write(header + '\t')
+output_file.write(header)
 for row in table_sorted:
     row = [str(x) for x in row]
     output_file.write("\t".join(row) + '\n')
